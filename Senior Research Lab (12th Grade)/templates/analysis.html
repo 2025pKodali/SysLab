@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Stock Analysis</title>
+    <link rel="stylesheet" href="../static/css/indexStyle.css">
+    <style>
+        .buttonContainer {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .buttonContainer button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <h1>AI Stock Analysis</h1>
+        <pre>{{ output }}</pre>
+        <button onclick="window.location.href='/'">Back to Home</button>
+
+        <div class="buttonContainer">
+            <button onclick="window.location.href='/top-buyers'"> Valuation Metrics </button>
+            <button onclick="window.location.href='/top-sellers'"> Insider Trading </button>
+            <button onclick="window.location.href='/form4-dashboard'">Form 4 Overview</button>
+            <button onclick="window.location.href='/stock-sentiment'"> Stock Watchlist </button>
+            <button onclick="window.location.href='/company-lookup'"> SEC Filings Dashboard</button>
+        </div>
+        <!-- <div class="buttonContainer">
+            <a href="#" class="navButton"> Investing Basic Guide</a>
+            <a href="#" class="navButton"> Valuation Metrics</a>
+            <a href="#" class="navButton"> Insider Trading</a>
+            <a href="#" class="navButton"> Form 4 Overview</a>
+            <a href="#" class="navButton"> Stock Watchlist</a>
+            <a href="#" class="navButton"> SEC Filings Dashboard </a>
+        </div> -->
+    </div>
+</body>
+</html>
